@@ -3,10 +3,16 @@ import Hero from "../Hero/Hero";;
 
 const AboutView = () => {
     return (
-        <div>
-            <Hero />
-            <h2>About us</h2>
-        </div>
+        <>
+            <Hero text="About us"/>
+            <div className="container">
+                <div className="row">
+                    <div className="col-lg-8 offset-lg-2 my-5">
+                       <p className="lead">Hi</p> 
+                    </div>
+                </div>
+            </div>
+        </>
     );
 }
 

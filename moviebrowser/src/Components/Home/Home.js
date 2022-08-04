@@ -3,10 +3,16 @@ import Hero from "../Hero/Hero";
 
 const Home = () => {
     return (
-        <div>
-            <Hero />
-            <h1>Hellow</h1>
-        </div>
+        <>
+            <Hero text="Welcome to React 201" />
+            <div className="container">
+                <div className="row">
+                    <div className="col-lg-8 offset-lg-2 my-5">
+                       <p className="lead">Lol</p> 
+                    </div>
+                </div>
+            </div>
+        </>
     );
 }
 

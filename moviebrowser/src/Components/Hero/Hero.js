@@ -1,9 +1,9 @@
 import React from "react";
 
-const Hero = () => {
+const Hero = ({text}) => {
     return (
     <header className="bg-dark text-white p-5">
-        <h1>This is a hero component</h1>
+        <h1>{text}</h1>
     </header>
     );
 }
