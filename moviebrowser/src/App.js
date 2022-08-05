@@ -12,6 +12,17 @@ function App() {
   const [searchResults, setSearchResults] = useState ({});
   const [searchText, setSearchText] = useState ('');
 
+  useEffect (()=> {
+      console.log (searchText, "is the search text")
+      fetch(`https://api.themoviedb.org/3/search/movie?api_key=ff17f76a0910d30be29baf43308e80be&language=en-US&query=${searchText}&page=1&include_adult=false
+      `)
+      .then(response => response.json())
+      .then(data => {
+        console.log(data)
+        setSearchResults(data.results)
+      })
+  }, [searchText])
+
   return (
     <div>
       <NavBar searchText={searchText} setSearchText={setSearchText}/>
