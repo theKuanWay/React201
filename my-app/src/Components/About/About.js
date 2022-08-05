@@ -8,7 +8,7 @@ const AboutView = () => {
             <div className="container">
                 <div className="row">
                     <div className="col-lg-8 offset-lg-2 my-5">
-                       <p className="lead">Hi</p> 
+                       <p className="lead">Feel free to search your favourite movie!</p> 
                     </div>
                 </div>
             </div>
